@@ -3,8 +3,125 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  margin-right: 80%;
+  height: 10vmin;
   pointer-events: none;
+}
+.content-holder{
+  background-image: url("https://thumbs.dreamstime.com/b/cinema-film-strip-wave-d-glasses-reel-clapper-board-isolated-blue-background-movie-flyer-poster-place-your-text-149505922.jpg");
+ 
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.searchbox-wrap{
+  height: 60px;
+  background-color: #ff4400b2;
+  color: white;
+  font-style: bold;
+
+}
+.icon{
+  float: left;
+  margin: 20px;
+}
+.searchbox{
+  float: left;
+  margin-top: 5px;
+  margin-left: 20%;
+  height: 50px;
+  border: none;
+  color: white;
+  border-radius: 10%;
+  color: white;
+  width: 300px !important;
+  background-color: rgba(255, 255, 255, 0.198);
+}
+.end-message{
+  color: white;
+  margin: 5%;
+}
+
+.ItemHolder{
+  text-align: center;
+    -ms-text-justify: distribute-all-lines !important;
+    text-justify: distribute-all-lines !important;
+    width:60%;
+    margin-top: 5%;
+    margin: auto;
+    background-color: #021631ef ;
+}
+
+.ItemTitle{
+  color: white;
+ 
+}
+
+
+.ItemBox{
+  width: 40vh;
+    height: 300px;
+    margin: 5px;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    *display: inline;
+    border-radius: 100%;
+    zoom: 1;
+    font-size: 6px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ItemBox:hover {
+  background-color: rgba(255, 255, 255, 0.144);
+  transition: 1s;
+  font-size: 8px;
+  cursor: pointer;
+}
+.ItemImage{
+  text-align: center;
+  height: 60%;
+  margin-top: 10%;
+  pointer-events: none;
+  border-radius: 100%;
+}
+.selected-holder{
+  width: 100% !important;
+  background-color: #282c34;
+}
+
+.details-main{
+  
+  background-image: url("https://img2.pngio.com/movie-theater-transparent-png-clipart-free-download-ywd-cinema-hall-png-2500_1250.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.849);
+  
+  height: 100%;
+}
+.detail-image{
+  height: 300px;
+  margin-bottom: 40%;
+  display: inline-block;
+}
+.detail-info{
+  display: inline-block;
+  margin-top: 10%;
+  vertical-align: top;
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+.left-side{
+  display: inline-block;
+  margin-right: 5%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,7 +132,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 17vh;
   display: flex;
   flex-direction: column;
   align-items: center;
