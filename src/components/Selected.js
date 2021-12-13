@@ -39,11 +39,11 @@ class Selected extends Component {
             <div>
                 <div className='details-main' >
                     <div className='left-side'>
-                    <h1>{infos.name ? infos.name : infos.title}</h1>
-                        <img className="detail-image" alt="box" src={"http://image.tmdb.org/t/p/w185/" + infos.poster_path} />
+                    <h1>{infos.name ? infos.name : infos.title ? infos.title : <span>Title not available! </span>}</h1>
+                        {infos.poster_path ? <img className="detail-image" alt="img" src={"http://image.tmdb.org/t/p/w185/" + infos.poster_path} /> : <span>Image not available!</span>}
                         </div>
                     <div className="detail-info">
-                        <span> {infos.overview}</span>
+                        <span> {infos.overview ? infos.overview : <span >Description is not available!</span>}</span>
                     </div>
                 </div>
             </div>
