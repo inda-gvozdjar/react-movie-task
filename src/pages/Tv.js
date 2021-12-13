@@ -43,7 +43,6 @@ class Tv extends Component {
 
     render() {
         const { data } = this.state;
-        // console.log("ojsaaa!#", data)
         return (
             
             <div className='ItemHolder'>

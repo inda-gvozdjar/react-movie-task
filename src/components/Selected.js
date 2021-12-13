@@ -18,7 +18,6 @@ class Selected extends Component {
     componentDidMount() {
         this._isMounted = true;
         let path = window.location.pathname.split("/")
-        console.log(path, "paaaaaaaaaaa")
         if (path[3])
             this.selected(path[2] + '/' + path[3])
     }
@@ -26,7 +25,6 @@ class Selected extends Component {
     selected(match) {
         fetch(API + match + DEFAULT_QUERY)
             .then(response => response.json())
-            .then( console.log(API + match + DEFAULT_QUERY, "eeeeeee"))
             .then(data => {
                 this.setState({ data: data })
             })
